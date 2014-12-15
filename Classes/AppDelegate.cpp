@@ -12,7 +12,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     if(!glview) {
         glview = GLView::create("Black and White Saga");		
-		glview->setFrameSize(DESIGN_W * 0.75f, DESIGN_H * 0.5f);
+		glview->setFrameSize(DESIGN_W , DESIGN_H );
         director->setOpenGLView(glview);				
     }
 

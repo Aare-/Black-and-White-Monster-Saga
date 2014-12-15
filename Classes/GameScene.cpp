@@ -617,7 +617,7 @@ bool Game::init() {
 	scoreLabel->setPosition(cocos2d::Vec2(DESIGN_W / 2, DESIGN_H - 50));
 	addChild(scoreLabel);
 
-	monster = cocos2d::Sprite::create("monsterhead.png");
+	monster = Sub::getSprite("monsterhead.png");
 	monster->setVisible(false);
 	boardLayer->monsterLayer->addChild(monster);
 
